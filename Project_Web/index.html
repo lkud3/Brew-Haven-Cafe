@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Cafe</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5vw;
+        }
+
+        .home {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        video {
+            object-fit: cover;
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .text {
+            text-align: center;
+            color: #973252;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+            color: #973252;
+            text-decoration: none;
+            font-size: 1.5em;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <video autoplay muted loop>
+            <source src="images/overlay_video.mp4" type="video/mp4" />
+        </video>
+        <div class="text">
+            <h1>Brew Haven Cafe</h1>
+            <a href="home.html">Awaken Your Senses, Sip by Sip.</a>
+        </div>
+    </div>    
+</body>
+</html>

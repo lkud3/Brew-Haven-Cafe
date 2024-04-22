@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Cafe</title>
+    <link href="style.css" rel=stylesheet type="text/css" />
+    <style>
+        .right 
+        {
+            float:right;
+            margin-left:6px;
+            width: 50%;
+        }
+        article h1{
+            text-align: center;
+            color: #973252;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            
+        }
+        #main_col{
+            background-color: rgba(255, 255, 255, 0.8);
+            overflow: auto; 
+            margin-left: 1vw;
+            margin-right: 1vw;
+            text-align: center;  
+            border-radius: 10px;
+        }
+
+        #main_col p{
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>    
+        <img src="images/logo.png" alt="logo"> 
+        <a href="index.html" id="header_tittle">Brew Haven Cafe</a>
+        <nav>
+            <ul>
+                <li class="menu"><a href="home.html">HOME</a></li>
+                <li class="menu"><a href="about.html">ABOUT US</a></li>
+                <div class="dropdown">
+                    <li class="menu"><a id="drop" href="menu.html">MENU</a> </li>
+                        <div class="dropdown-content">
+                            <li class="menu"><a href="order.html">ORDER</a> </li>
+                        </div>
+                </div> 
+                <li class="menu"><a href="info.html">INFO</a></li>
+                <div class="dropdown">
+                    <li class="menu"><a id="drop" href="contact.html">CONTACT US</a></li>
+                        <div class="dropdown-content">
+                            <li class="menu"><a href="locations.html">LOCATIONS</a></li>
+                        </div>
+                </div>
+                <li class="menu"><a href="feedback.html">FEEDBACK</a></li>
+            </ul>
+        </nav>
+  </header>
+
+
+
+  <main>
+    <article>
+        <h1>Brew Haven Cafe</h1>
+        <div id="main_col">
+            <img src="images/coffe_main.jpg" alt="Coffe"  class="right" />
+            <p>Enjoy a variety of brewed coffee in a cozy and inviting atmosphere.</p>
+            <br>
+            <p>Indulge your senses with our meticulously curated selection of coffee blends. From the robust notes of our signature dark roast to the velvety smoothness of our specialty lattes, each sip is a celebration of flavor and passion.</p>
+        </div>
+        </article>
+  </main>
+
+
+
+    <footer>
+        <p>© 2023 All Rights Reserved:Brew Haven Cafe</p>
+  </footer>
+</body>
+</html>

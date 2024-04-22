@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Cafe</title>
+    <link href="style.css" rel=stylesheet type="text/css" />
+    <style>
+        h1{
+            text-align: center;
+            color: #973252;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            
+        }
+        .form {
+            width:50%;
+            margin:auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            overflow: auto; 
+            padding-left: 10vw;
+            padding-right: 10vw;
+            border-radius: 10px;
+        }
+        .box {
+            border: 2px black solid;
+            padding: 5px;
+            margin: 5px;
+        }
+        .box h3{
+            text-align: center;
+            font-size: 20px;
+            font-weight: normal;
+            background-color: #973252;
+            color: white;
+            padding: 5px;
+            margin: 0px;
+        }
+        form {
+            padding: 10px; 
+        }
+        .box ul {
+	        margin-top: 5px;
+	        margin-bottom: 5px;
+        }
+        .price  {
+            float: right;
+        }
+        input[type="button"] {
+            display: inline-block;
+            margin: 0 10px 0 10px;
+            padding: 10px 20px;
+            background-color: #973252;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>    
+        <img src="images/logo.png" alt="logo"> 
+        <a href="index.html" id="header_tittle">Brew Haven Cafe</a>
+        <nav>
+            <ul>
+                <li class="menu"><a href="home.html">HOME</a></li>
+                <li class="menu"><a href="about.html">ABOUT US</a></li>
+                <div class="dropdown">
+                    <li class="menu"><a id="drop" href="menu.html">MENU</a> </li>
+                        <div class="dropdown-content">
+                            <li class="menu"><a href="order.html">ORDER</a> </li>
+                        </div>
+                </div> 
+                <li class="menu"><a href="info.html">INFO</a></li>
+                <div class="dropdown">
+                    <li class="menu"><a id="drop" href="contact.html">CONTACT US</a></li>
+                        <div class="dropdown-content">
+                            <li class="menu"><a href="locations.html">LOCATIONS</a></li>
+                        </div>
+                </div>
+                <li class="menu"><a href="feedback.html">FEEDBACK</a></li>
+            </ul>
+        </nav>
+  </header>
+
+
+
+  <main>
+    <h1>Want to order?</h1>
+		<div class="form" id="form">
+			<div class="box">
+				<h3>Coffee</h3>
+				<form id="coffee">
+					<label><input type="radio" name="coffeeSelect" value="Espesso" checked/>Espesso<span class="price">$2.99</span></label><br />
+					<label><input type="radio" name="coffeeSelect" value="Cappuccino" />Cappuccino<span class="price">$3.50</span></label><br />
+					<label><input type="radio" name="coffeeSelect" value="Latte" />Latte<span class="price">$4.00</span></label><br />
+					<label><input type="radio" name="coffeeSelect" value="Cold Brew" />Cold Brew<span class="price">$5.80</span></label><br />
+				</form>
+			</div>
+			<div class="box">
+				<h3>Combo</h3>
+				<form id="combo">
+					<label><input type="radio" name="comboSelect" value="combo_1" />Medium Combo #1<span class="price">$0.50</span></label><br />
+					<ul>
+						<li>Medium coffee</li>
+					</ul>
+					<label><input type="radio" name="comboSelect" value="combo_2" />Large Combo #2<span class="price">$1.50</span></label><br />
+					<ul>
+						<li>Large coffee</li>
+						<li>Additional snack</li>
+					</ul>
+					<label><input type="radio" name="comboSelect" value="no_combo" checked/>No Combo<span class="price">$0</span></label><br />
+				</form>
+			</div>
+			<div class="box">
+				<h3>Special offers</h3>
+				<form id="offer">
+					<label><input type="checkbox" name="offerSelect" value="add_syrup" id="ckb1"/>Add Syrup<span class="price">$1.00</span></label><br />
+					<label><input type="checkbox" name="offerSelect" value="make_it_double" id="ckb2"/>Make it Double<span class="price">$0.50</span></label><br />
+					<label><input type="checkbox" name="offerSelect" value="gingerbread" id="ckb3"/>Gingerbread<span class="price">$2.00</span></label><br />
+				</form>
+			</div>
+			<div class="box">
+				<h3>Total Price</h3>
+				<form id="total_price">
+					<label><input readonly type="text" name="total" id="txtTotal"/></label>
+					<label><input type="button" value="Calculate Total" onclick="calculateTotal();" /></label>
+                    <label><input type="button" id="order" value="Place Order" onclick="alert('Thank you for your order!')" /></label><br />
+				</form>
+			</div>
+		</div>
+  </main>
+
+
+
+    <footer>
+        <p>© 2023 All Rights Reserved:Brew Haven Cafe</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
